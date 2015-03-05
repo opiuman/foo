@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://schema.nbcnews.com/image",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "entry": {
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string"
+        },
+        "fid": {
+          "type": "string"
+        },
+        "filename": {
+          "type": "string"
+        },
+        "filemime": {
+          "type": "string"
+        },
+        "filesize": {
+          "type": "string"
+        },
+        "revision_timestamp": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "focus_rect": {
+          "type": "null"
+        },
+        "crop_rect": {
+          "type": "null"
+        },
+        "alt_text": {
+          "type": "null"
+        },
+        "title": {
+          "type": "null"
+        },
+        "byline": {
+          "type": "null"
+        },
+        "caption": {
+          "type": "null"
+        },
+        "copyright": {
+          "type": "null"
+        },
+        "source": {
+          "type": "null"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "revision_hash": {
+          "type": "string"
+        },
+        "drupal_path": {
+          "type": "string"
+        },
+        "aims_image_name": {
+          "type": "string"
+        },
+        "aims_image_path": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "aims_image_path"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "action",
+    "entry"
+  ]
+}
