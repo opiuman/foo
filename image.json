@@ -34,28 +34,28 @@
           "type": "string"
         },
         "focus_rect": {
-          "type": "null"
+          "type": "string"
         },
         "crop_rect": {
-          "type": "null"
+          "type": "string"
         },
         "alt_text": {
-          "type": "null"
+          "type": ["string", "null"]
         },
         "title": {
-          "type": "null"
+          "type": "string"
         },
         "byline": {
-          "type": "null"
+          "type": "string"
         },
         "caption": {
-          "type": "null"
+          "type": "string"
         },
         "copyright": {
-          "type": "null"
+          "type": ["string", "null"]
         },
         "source": {
-          "type": "null"
+          "type": "string"
         },
         "width": {
           "type": "integer"
