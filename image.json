@@ -43,7 +43,7 @@
           "type": ["string", "null"]
         },
         "title": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "byline": {
           "type": ["string", "null"]
