@@ -37,7 +37,7 @@
           "type": "string"
         },
         "crop_rect": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "alt_text": {
           "type": ["string", "null"]
