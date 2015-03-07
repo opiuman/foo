@@ -73,7 +73,7 @@
           "type": "string"
         },
         "aims_image_path": {
-          "type": ["string", "null"]
+          "type": null
         }
       },
       "additionalProperties": false,
