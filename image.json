@@ -34,7 +34,7 @@
           "type": "string"
         },
         "focus_rect": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "crop_rect": {
           "type": ["string", "null"]
