@@ -64,7 +64,7 @@
           "type": "integer"
         },
         "revision_hash": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "drupal_path": {
           "type": "string"
