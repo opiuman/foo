@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "taxonomy_term",
+  "type": "object",
+  "properties": {
+    "action": {
+      "id": "action",
+      "type": "string"
+    },
+    "entry": {
+      "id": "entry",
+      "type": "object",
+      "properties": {
+        "announcements": {
+          "id": "announcements",
+          "type": "null"
+        },
+        "avatar_image": {
+          "type": "null"
+        },
+        "changed": {
+          "id": "changed",
+          "type": "integer"
+        },
+        "created": {
+          "id": "created",
+          "type": "integer"
+        },
+        "description": {
+          "id": "description",
+          "type": "string"
+        },
+        "enable_newsletter": {
+          "id": "enable_newsletter",
+          "type": "null"
+        },
+        "facebook": {
+          "id": "facebook",
+          "type": "null"
+        },
+        "feature_type": {
+          "id": "feature_type",
+          "type": "null"
+        },
+        "is_feature": {
+          "id": "is_feature",
+          "type": "integer"
+        },
+        "is_show": {
+          "id": "is_show",
+          "type": "integer"
+        },
+        "name": {
+          "id": "name",
+          "type": "string"
+        },
+        "parent_id": {
+          "id": "parent_id",
+          "type": "null"
+        },
+        "parent_name": {
+          "id": "parent_name",
+          "type": "null"
+        },
+        "revision_timestamp": {
+          "id": "revision_timestamp",
+          "type": "integer"
+        },
+        "term_type": {
+          "id": "term_type",
+          "type": "null"
+        },
+        "tid": {
+          "id": "tid",
+          "type": "string"
+        },
+        "title": {
+          "id": "title",
+          "type": "string"
+        },
+        "twitter": {
+          "id": "twitter",
+          "type": "null"
+        },
+        "vocabulary_type": {
+          "id": "vocabulary_type",
+          "type": "string"
+        }
+      }
+    },
+    "type": {
+      "id": "type",
+      "type": "string"
+    }
+  },
+  "required": [
+    "action",
+    "entry",
+    "type"
+  ]
+}
