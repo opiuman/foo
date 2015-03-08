@@ -28,7 +28,7 @@
         },
         "description": {
           "id": "description",
-          "type": "string"
+          "type": ["null","string"]
         },
         "enable_newsletter": {
           "id": "enable_newsletter",
