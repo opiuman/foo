@@ -16,7 +16,7 @@
           "type": "null"
         },
         "avatar_image": {
-          "type": "null"
+          "type": ["null","string"]
         },
         "changed": {
           "id": "changed",
