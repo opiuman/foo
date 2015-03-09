@@ -32,7 +32,7 @@
         },
         "enable_newsletter": {
           "id": "enable_newsletter",
-          "type": "null"
+          "type":  ["null","string"]
         },
         "facebook": {
           "id": "facebook",
