@@ -84,7 +84,7 @@
         },
         "vocabulary_type": {
           "id": "vocabulary_type",
-          "type": "string"
+          "type": ["null","string"]
         }
       }
     },
