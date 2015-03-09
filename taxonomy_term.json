@@ -1,95 +1,73 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "taxonomy_term",
   "type": "object",
   "properties": {
     "action": {
-      "id": "action",
       "type": "string"
     },
     "entry": {
-      "id": "entry",
       "type": "object",
       "properties": {
         "announcements": {
-          "id": "announcements",
           "type": "null"
         },
         "avatar_image": {
           "type": ["null","string"]
         },
         "changed": {
-          "id": "changed",
           "type": "integer"
         },
         "created": {
-          "id": "created",
           "type": "integer"
         },
         "description": {
-          "id": "description",
           "type": ["null","string"]
         },
         "enable_newsletter": {
-          "id": "enable_newsletter",
           "type":  ["null","string"]
         },
         "facebook": {
-          "id": "facebook",
           "type": ["null","string"]
         },
         "feature_type": {
-          "id": "feature_type",
           "type": "null"
         },
         "is_feature": {
-          "id": "is_feature",
           "type": "integer"
         },
         "is_show": {
-          "id": "is_show",
           "type": "integer"
         },
         "name": {
-          "id": "name",
           "type": ["null","string"]
         },
         "parent_id": {
-          "id": "parent_id",
-          "type": "null"
+          "type": ["null","string"]
         },
         "parent_name": {
-          "id": "parent_name",
-          "type": "null"
+          "type":["null","string"]
         },
         "revision_timestamp": {
-          "id": "revision_timestamp",
           "type": "integer"
         },
         "term_type": {
-          "id": "term_type",
-          "type": "null"
+          "type": ["null","string"]
         },
         "tid": {
-          "id": "tid",
           "type": "string"
         },
         "title": {
-          "id": "title",
            "type": ["null","string"]
         },
         "twitter": {
-          "id": "twitter",
-          "type": "null"
+          "type": ["null","string"]
         },
         "vocabulary_type": {
-          "id": "vocabulary_type",
           "type": ["null","string"]
         }
       }
     },
     "type": {
-      "id": "type",
       "type": "string"
     }
   },
