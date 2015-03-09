@@ -36,7 +36,7 @@
         },
         "facebook": {
           "id": "facebook",
-          "type": "null"
+          "type": ["null","string"]
         },
         "feature_type": {
           "id": "feature_type",
