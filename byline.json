@@ -1,84 +1,64 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "byline",
   "type": "object",
   "properties": {
     "action": {
-      "id": "action",
       "type": "string"
     },
     "entry": {
-      "id": "entry",
       "type": "object",
       "properties": {
         "bio": {
-          "id": "bio",
           "type": ["null","string"]
         },
         "changed": {
-          "id": "changed",
           "type": "integer"
         },
         "city": {
-          "id": "city",
           "type": "string"
         },
         "created": {
-          "id": "created",
           "type": "integer"
         },
         "email": {
-          "id": "email",
           "type": "string"
         },
         "facebook_page": {
-          "id": "facebook_page",
           "type": "string"
         },
         "gplus": {
-          "id": "gplus",
           "type": "string"
         },
         "instagram": {
-          "id": "instagram",
           "type": "string"
         },
         "is_vip": {
-          "id": "is_vip",
           "type": "integer"
         },
         "name": {
-          "id": "name",
           "type": "string"
         },
         "nid": {
-          "id": "nid",
           "type": "string"
         },
         "professional_title": {
-          "id": "professional_title",
           "type": "string"
         },
         "revision_timestamp": {
-          "id": "revision_timestamp",
           "type": "integer"
         },
         "show_or_site": {
-          "id": "show_or_site",
           "type": "string"
         },
         "twitter_handle": {
-          "id": "twitter_handle",
           "type": "string"
         },
         "type": {
-          "id": "type",
           "type": "string"
         }
       }
     },
     "type": {
-      "id": "type",
       "type": "string"
     }
   },
