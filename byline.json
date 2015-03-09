@@ -15,22 +15,22 @@
           "type": "integer"
         },
         "city": {
-          "type": "string"
+         "type": ["null","string"]
         },
         "created": {
           "type": "integer"
         },
         "email": {
-          "type": "string"
+         "type": ["null","string"]
         },
         "facebook_page": {
-          "type": "string"
+          "type": ["null","string"]
         },
         "gplus": {
-          "type": "string"
+          "type": ["null","string"]
         },
         "instagram": {
-          "type": "string"
+          "type": ["null","string"]
         },
         "is_vip": {
           "type": "integer"
@@ -42,7 +42,7 @@
           "type": "string"
         },
         "professional_title": {
-          "type": "string"
+          "type": ["null","string"]
         },
         "revision_timestamp": {
           "type": "integer"
@@ -51,7 +51,7 @@
           "type": "string"
         },
         "twitter_handle": {
-          "type": "string"
+          "type": ["null","string"]
         },
         "type": {
           "type": "string"
