@@ -13,7 +13,7 @@
       "properties": {
         "bio": {
           "id": "bio",
-          "type": "null"
+          "type": ["null","string"]
         },
         "changed": {
           "id": "changed",
