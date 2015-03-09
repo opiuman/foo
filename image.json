@@ -1,6 +1,5 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://schema.nbcnews.com/image",
   "type": "object",
   "properties": {
     "type": {
