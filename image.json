@@ -58,7 +58,7 @@
           "type": ["string", "null"]
         },
         "width": {
-          "type": "string"
+          "type": "integer"
         },
         "height": {
           "type": "integer"
