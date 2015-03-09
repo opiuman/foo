@@ -1,91 +1,113 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://schema.nbcnews.com/image",
+  "id": "image",
   "type": "object",
   "properties": {
-    "type": {
+    "AltText": {
+      "id": "AltText",
       "type": "string"
     },
-    "action": {
+    "Byline": {
+      "id": "Byline",
       "type": "string"
     },
-    "entry": {
+    "ExpireAtUtc": {
+      "id": "ExpireAtUtc",
+      "type": "string"
+    },
+    "ExternalId": {
+      "id": "ExternalId",
+      "type": "string"
+    },
+    "ExternalSource": {
+      "id": "ExternalSource",
+      "type": "string"
+    },
+    "GraphicWarning": {
+      "id": "GraphicWarning",
+      "type": "boolean"
+    },
+    "Height": {
+      "id": "Height",
+      "type": "integer"
+    },
+    "IngestedAtUtc": {
+      "id": "IngestedAtUtc",
+      "type": "string"
+    },
+    "MainArt": {
+      "id": "MainArt",
+      "type": "null"
+    },
+    "PublishedAtUtc": {
+      "id": "PublishedAtUtc",
+      "type": "string"
+    },
+    "Source": {
+      "id": "Source",
       "type": "object",
       "properties": {
-        "uid": {
+        "Copyright": {
+          "id": "Copyright",
+          "type": "null"
+        },
+        "Logo": {
+          "id": "Logo",
+          "type": "null"
+        },
+        "SourceName": {
+          "id": "SourceName",
           "type": "string"
         },
-        "fid": {
-          "type": "string"
-        },
-        "filename": {
-          "type": "string"
-        },
-        "filemime": {
-          "type": "string"
-        },
-        "filesize": {
-          "type": "string"
-        },
-        "revision_timestamp": {
-          "type": "integer"
-        },
-        "status": {
-          "type": "string"
-        },
-        "focus_rect": {
-          "type": "string"
-        },
-        "crop_rect": {
-          "type": ["string", "null"]
-        },
-        "alt_text": {
-          "type": ["string", "null"]
-        },
-        "title": {
-          "type": "string"
-        },
-        "byline": {
-          "type": ["string", "null"]
-        },
-        "caption": {
-          "type": "string"
-        },
-        "copyright": {
-          "type": ["string", "null"]
-        },
-        "source": {
-          "type": ["string", "null"]
-        },
-        "width": {
-          "type": "integer"
-        },
-        "height": {
-          "type": "integer"
-        },
-        "revision_hash": {
-          "type": "string"
-        },
-        "drupal_path": {
-          "type": "string"
-        },
-        "aims_image_name": {
-          "type": "string"
-        },
-        "aims_image_path": {
-          "type": "string"
+        "Url": {
+          "id": "Url",
+          "type": "null"
         }
-      },
-      "additionalProperties": false,
-      "required": [
-        "aims_image_path"
-      ]
+      }
+    },
+    "Summary": {
+      "id": "Summary",
+      "type": "string"
+    },
+    "Tags": {
+      "id": "Tags",
+      "type": "array",
+      "items": []
+    },
+    "Title": {
+      "id": "Title",
+      "type": "string"
+    },
+    "Type": {
+      "id": "Type",
+      "type": "string"
+    },
+    "Url": {
+      "id": "Url",
+      "type": "string"
+    },
+    "Width": {
+      "id": "Width",
+      "type": "integer"
     }
   },
-  "additionalProperties": false,
   "required": [
-    "type",
-    "action",
-    "entry"
+    "AltText",
+    "Byline",
+    "ExpireAtUtc",
+    "ExternalId",
+    "ExternalSource",
+    "GraphicWarning",
+    "Height",
+    "IngestedAtUtc",
+    "MainArt",
+    "PublishedAtUtc",
+    "Source",
+    "Summary",
+    "Tags",
+    "Title",
+    "Type",
+    "Url",
+    "Width"
   ]
 }
