@@ -76,7 +76,7 @@
         },
         "title": {
           "id": "title",
-          "type": "string"
+           "type": ["null","string"]
         },
         "twitter": {
           "id": "twitter",
