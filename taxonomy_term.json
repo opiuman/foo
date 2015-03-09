@@ -52,7 +52,7 @@
         },
         "name": {
           "id": "name",
-          "type": "string"
+          "type": ["null","string"]
         },
         "parent_id": {
           "id": "parent_id",
