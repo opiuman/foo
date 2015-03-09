@@ -17,7 +17,7 @@
         },
         "copyright": {
           "id": "copyright",
-          "type": "string"
+          "type": ["string","null"]
         },
         "created": {
           "id": "created",
