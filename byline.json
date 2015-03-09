@@ -48,7 +48,7 @@
           "type": "integer"
         },
         "show_or_site": {
-          "type": "string"
+          "type": ["null","string"]
         },
         "twitter_handle": {
           "type": ["null","string"]
