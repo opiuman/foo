@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "source",
+  "type": "object",
+  "properties": {
+    "action": {
+      "id": "action",
+      "type": "string"
+    },
+    "entry": {
+      "id": "entry",
+      "type": "object",
+      "properties": {
+        "changed": {
+          "id": "changed",
+          "type": "integer"
+        },
+        "copyright": {
+          "id": "copyright",
+          "type": "string"
+        },
+        "created": {
+          "id": "created",
+          "type": "integer"
+        },
+        "description": {
+          "id": "description",
+          "type": "string"
+        },
+        "name": {
+          "id": "name",
+          "type": "string"
+        },
+        "nid": {
+          "id": "nid",
+          "type": "string"
+        },
+        "revision_timestamp": {
+          "id": "revision_timestamp",
+          "type": "integer"
+        },
+        "type": {
+          "id": "type",
+          "type": "string"
+        }
+      }
+    },
+    "type": {
+      "id": "type",
+      "type": "string"
+    }
+  },
+  "required": [
+    "action",
+    "entry",
+    "type"
+  ]
+}
