@@ -6,31 +6,52 @@
       "type": "string"
     },
     "entry": {
-      "type": "object",
+      "type": [
+        "object",
+        "string"
+      ],
       "properties": {
         "bio": {
-          "type": ["null","string"]
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "changed": {
           "type": "integer"
         },
         "city": {
-         "type": ["null","string"]
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "created": {
           "type": "integer"
         },
         "email": {
-         "type": ["null","string"]
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "facebook_page": {
-          "type": ["null","string"]
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "gplus": {
-          "type": ["null","string"]
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "instagram": {
-          "type": ["null","string"]
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "is_vip": {
           "type": "integer"
@@ -42,21 +63,36 @@
           "type": "string"
         },
         "professional_title": {
-          "type": ["null","string"]
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "revision_timestamp": {
           "type": "integer"
         },
         "show_or_site": {
-          "type": ["null","string"]
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "twitter_handle": {
-          "type": ["null","string"]
+          "type": [
+            "null",
+            "string"
+          ]
         },
         "type": {
           "type": "string"
         }
       }
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "externalSource": {
+      "type": "string"
     },
     "type": {
       "type": "string"
