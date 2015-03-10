@@ -81,7 +81,6 @@
       ]
     }
   },
-  "additionalProperties": false,
   "required": [
     "type",
     "action",
