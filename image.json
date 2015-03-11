@@ -18,7 +18,7 @@
           "type": "string"
         },
         "filename": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "filemime": {
           "type": "string"
@@ -42,7 +42,7 @@
           "type": ["string", "null"]
         },
         "title": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "byline": {
           "type": ["string", "null"]
