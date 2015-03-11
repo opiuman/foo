@@ -48,7 +48,7 @@
           "type": ["string", "null"]
         },
         "caption": {
-          "type": "string"
+          "type": ["string", "null"]
         },
         "copyright": {
           "type": ["string", "null"]
