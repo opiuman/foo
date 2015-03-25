@@ -24,7 +24,7 @@
           "type": "string"
         },
         "filesize": {
-          "type": "string"
+          "type": ["string","integer"]
         },
         "revision_timestamp": {
           "type": "integer"
