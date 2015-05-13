@@ -45,7 +45,7 @@
           "type": "string"
         },
         "byline": {
-          "type": ["string", "null"]
+          "type": ["string", "null","integer"]
         },
         "caption": {
           "type": ["string", "null"]
