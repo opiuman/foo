@@ -54,7 +54,7 @@
           "type": "string"
         },
         "source": {
-          "type": ["string", "null"]
+          "type": "string"
         },
         "width": {
          "type": "integer"
