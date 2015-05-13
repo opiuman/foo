@@ -51,7 +51,7 @@
           "type": ["string", "null"]
         },
         "copyright": {
-          "type": ["string", "null"]
+          "type": "string"
         },
         "source": {
           "type": ["string", "null"]
