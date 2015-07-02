@@ -39,7 +39,7 @@
           "type": "string"
         },
         "alt_text": {
-          "type": ["string", "null"]
+          "type": "string"
         },
         "title": {
           "type": "string"
