@@ -30,7 +30,7 @@
           "type": "integer"
         },
         "status": {
-          "type": "string"
+          "type": ["string", "integer"]
         },
         "focus_rect": {
           "type": "string"
