@@ -3,72 +3,295 @@
   "type": "object",
   "properties": {
     "action": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "save",
+        "update"
+      ],
+      "description": "The action tied to the message. Either save or update."
     },
     "entry": {
       "type": "object",
       "properties": {
-        "announcements": {
-          "type": "null"
-        },
         "avatar_image": {
-          "type": ["null","string"]
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Deprecated avatar image url"
         },
         "changed": {
-          "type": "integer"
+          "type": "number",
+          "description": "UNIX timestamp of the date changed"
         },
         "created": {
-          "type": "integer"
+          "type": "number",
+          "description": "UNIX timestamp of the date the message was created"
         },
         "description": {
-          "type": ["null","string"]
+          "type": "string",
+          "description": "Description used for SEO"
+        },
+        "display_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Alternate value for the Taxonomy name used for presentation purposes."
         },
         "enable_newsletter": {
-          "type":  ["null","string"]
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Whether or not email delivery from the Taxonomy is allowed"
         },
         "facebook": {
-          "type": ["null","string"]
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional URL of Facebook page tied to this Taxonomy"
         },
-        "feature_type": {
-          "type": "null"
+        "front_module_enabled": {
+          "type": "number",
+          "description": "Whether or not frontModule is enabled for Taxonomy"
         },
-        "is_feature": {
-          "type": "integer"
+        "google_plus": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional URL of Google Plus account tied to this Taxonomy"
         },
-        "is_show": {
-          "type": "integer"
+        "instagram": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional URL of Instagram account tied to this Taxonomy"
         },
         "name": {
-          "type": ["null","string"]
+          "type": "string",
+          "description": "Name of Taxonomy"
+        },
+        "newsletter": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "???"
         },
         "parent_id": {
-          "type": ["null","string"]
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "externalId of Parent Taxonomy to the current"
         },
         "parent_name": {
-          "type":["null","string"]
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Name value of Parent Taxonomy to current"
+        },
+        "pinterest": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional URL of Pinterest account tied to this Taxonomy"
         },
         "revision_timestamp": {
-          "type": "integer"
+          "type": "number",
+          "description": "UNIX timestamp considered to be date modified value for Taxonomy"
         },
-        "term_type": {
-          "type": ["null","string"]
-        },
-        "tid": {
-          "type": "string"
-        },
-        "title": {
-           "type": ["null","string"]
-        },
-        "twitter": {
-          "type": ["null","string"]
+        "rss": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional URL to an RSS feed of the Taxonomy"
         },
         "vocabulary_type": {
-          "type": ["null","string"]
+          "type": "string",
+          "enum": [
+            "person"
+          ],
+          "description": "The Taxonomy vocabulary type"
+        },
+        "person": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "The name of the Person"
+            },
+            "alternate_name": {
+              "type": "array",
+              "description": "Alternate representations of a Person's name"
+            },
+            "bio": {
+              "type": "string",
+              "description": "Biography of the Person. Rich text field supporting markup"
+            },
+            "birth_date": {
+              "type": "number",
+              "description": "UNIX timestamp representing the birth date of the Person"
+            },
+            "birth_place": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "address_locality": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Representing the value analagous to city, town, village"
+                },
+                "address_region": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Representing the value analagous to state, province"
+                },
+                "address_country": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Representing the value analagous to country"
+                }
+              }
+            },
+            "job_title": {
+              "type": "array",
+              "description": "One or more job titles tied to a Person"
+            },
+            "relationships": {
+              "type": "array",
+              "description": "One or more people who are related to the Person"
+            },
+            "main_art": {
+              "type": "object",
+              "properties": {
+                "alt_text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Alternate text for image -- not used as an override"
+                },
+                "byline": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Author of image -- not used as an instance override"
+                },
+                "caption": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Caption for image -- not used as an override"
+                },
+                "copyright": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Copyright text for image -- not used as an override"
+                },
+                "crop_rect": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Used internally only by Drupal"
+                },
+                "fid": {
+                  "type": "string",
+                  "description": "Drupal id of image, used in Content API GUID creation"
+                },
+                "focus_rect": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Used internally only by Drupal"
+                },
+                "height": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Used internally only by Drupal"
+                },
+                "source": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Source organization for image -- not used as an override"
+                },
+                "title": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Used internally only by Drupal"
+                },
+                "url": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Used internally only by Drupal"
+                },
+                "width": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Used internally only by Drupal"
+                }
+              },
+              "required": [
+                "fid"
+              ]
+            },
+            "first_appearance": {
+              "type": "array",
+              "description": "One or more resources representing the first appearance of the Person"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "description": "Optional object used when vocabulary_type is \"person\"; contains all of the data tied to a person"
         }
-      }
+      },
+      "required": [
+        "changed",
+        "created",
+        "name",
+        "revision_timestamp",
+        "vocabulary_type"
+      ],
+      "description": "The core body of the message"
     },
     "type": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "taxonomy_term"
+      ],
+      "description": "The type of message"
     }
   },
   "required": [
