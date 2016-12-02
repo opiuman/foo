@@ -6,7 +6,7 @@
       "type": "string",
       "enum": [
         "save",
-        "update",
+        "update"
       ],
       "description": "The action tied to the message. Either save or update."
     },
