@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": [
+        "save",
+        "update"
+      ],
+      "description": "The action tied to the message. Possible values are limited to those specified below."
+    },
+    "entry": {
+      "type": "object",
+      "properties": {
+        "created": {
+          "type": "number",
+          "description": "The UNIX timestamp of the date the message was created."
+        },
+        "publication_date": {
+          "type": "number",
+          "description": "The UNIX timestamp of the date the message was published."
+        },
+        "revision_timestamp": {
+          "type": "number",
+          "description": "The UNIX timestamp of the date the message was changed."
+        },
+        "nid": {
+          "type": "number",
+          "description": "The Drupal id of the document. Used by News and Content APIs to construct their internal ids for this resource."
+        },
+        "layout": {
+          "type": "string",
+          "enum": [
+            "outro",
+            "intro",
+            "text",
+            "images"
+          ],
+          "default": "text",
+          "description": "The presentation layout that will be used for this App Block. Possible values are limited to those specified below."
+        },
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "**Plain Text.** Optional short label that appears with the main text."
+        },
+        "title": {
+          "type": "string",
+          "description": "**Plain Text.** The title/headline of the App Block."
+        },
+        "content": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "**Rich Text.** Displayed on the welcome screen as the main text. This is field that can contain limited markup, but no widgets or embedded items."
+        },
+        "images": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "description": "Array of one or more ordered set of images. No instance overrides allowed on image properties."
+        },
+        "link": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "A valid url to the linked resource."
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "article",
+                "video",
+                "slideshow",
+                "externalLink"
+              ],
+              "description": "The type of resource being linked to. This field is required when `link` is not null. Possible values are limited to those specified below."
+            }
+          },
+          "required": [
+            "url",
+            "type"
+          ],
+          "description": "A linked resource. If not null, `url` and `type` are required."
+        },
+        "hidden": {
+          "type": "boolean",
+          "description": "Publication state on whether its hidden or not."
+        }
+      },
+      "required": [
+        "created",
+        "publication_date",
+        "revision_timestamp",
+        "nid",
+        "layout",
+        "title",
+        "hidden"
+      ],
+      "description": "The core body of the message."
+    },
+    "type": {
+      "type": "string",
+      "description": "The content type of the message."
+    }
+  },
+  "required": [
+    "action",
+    "entry",
+    "type"
+  ]
+}
