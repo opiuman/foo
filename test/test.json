@@ -8,7 +8,7 @@
       "playlistType": "VIDEO",
       "id": "topnewsvideo",
       "analyticsPlaylistId": "nnd_20381145",
-      "title": "Top News",
+      "title": "Top Newssdf",
       "adCategory": "news",
       "sitePath": "news",
       "feedURLTemplate": "https://deviceservices.nbcnews.com/portal/playlist?server={{adServerTier}}&asset={{assetType}}&videobrand=firetv%7Cnews&mpxplaylistid=nnd_20381145",
