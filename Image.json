@@ -18,11 +18,11 @@
           "type": ["string"]
         },
         "filename": {
-          "type": "string"
-        },
-        "filemime": {
           "type": "string",
           "pattern": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
+        },
+        "filemime": {
+          "type": "string"
         },
         "filesize": {
           "type": ["string","integer"]
