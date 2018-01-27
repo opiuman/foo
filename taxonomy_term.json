@@ -29,7 +29,7 @@
           "description": "UNIX timestamp of the date the message was created"
         },
         "description": {
-          "type": "int",
+          "type": "number",
           "description": "Description used for SEO"
         },
         "display_name": {
