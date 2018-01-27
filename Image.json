@@ -15,7 +15,7 @@
           "type": "string"
         },
         "fid": {
-          "type": ["string","integer"]
+          "type": ["string"]
         },
         "filename": {
           "type": "string"
