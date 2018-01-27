@@ -19,7 +19,7 @@
         },
         "filename": {
           "type": "string",
-          "pattern": "^[A-Z0-9\.]+$"
+          "pattern": "^[A-Z0-9\\.]+$"
         },
         "filemime": {
           "type": "string"
