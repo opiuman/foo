@@ -19,7 +19,7 @@
         },
         "filename": {
           "type": "string",
-          "pattern": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
+          "pattern": "^[A-Z0-9\.]+$"
         },
         "filemime": {
           "type": "string"
