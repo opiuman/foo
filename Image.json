@@ -40,7 +40,7 @@
           "type": "string"
         },
         "alt_text": {
-          "type": "string"
+          "type": ["string", "integer"]
         },
         "title": {
           "type": "string"
