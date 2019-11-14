@@ -3,18 +3,16 @@ name: CI
 on: [push]
 
 jobs:
-  build:
+  job1:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - name: checkout
+      id: check
+      uses: actions/checkout@v1
+      
     - name: Run a multi-line script
       run: |
         git show --pretty="" --name-only $GITHUB_SHA > changes
+        echo ${{ steps.check.outputs }}
         
-  build2:
-    runs-on: ubuntu-latest
-    needs: [build]
-    steps:
-    - name: Run a multi-line script
-      run: |
-        cat changes 
+
