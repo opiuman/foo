@@ -15,4 +15,5 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        cat $GITHUB_EVENT_PATH
+        git show --pretty="" --name-only $GITHUB_SHA > changes
+        cat changes 
