@@ -13,6 +13,7 @@ jobs:
     - name: Run a multi-line script
       run: |
         git show --pretty="" --name-only $GITHUB_SHA > changes
+        echo 'sdf' | jq type
         echo "this is ${{ steps.check }}"
         
 
