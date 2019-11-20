@@ -14,5 +14,6 @@ jobs:
       run: |
         git show --pretty="" --name-only $GITHUB_SHA > changes
         env
+        echo ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         
 
